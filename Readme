@@ -1,0 +1,27 @@
+Healthcare Fraud Detection Project 
+**Objective:** Detect potential fraudulent healthcare providers using Medicare billing data.  
+**Tools Used:** Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+
+# Healthcare Fraud Detection Project
+Detect potential fraudulent healthcare providers using Python.
+
+## Dataset
+Medicare provider dataset (100k records) with provider details, services, and charges.
+
+## Tools Used
+- Python (Pandas, NumPy)
+- Visualization (Matplotlib, Seaborn)
+- Machine Learning (Scikit-learn)
+
+## Features
+- Average Submitted Charge Amount
+- Average Medicare Standardized Amount
+- Number of Services
+- Fraud Flag (Target Variable)
+
+## Usage
+Open the Jupyter notebook and run all cells to explore the analysis and model.
+
+## Author
+V. Karthigaipriya
+
