@@ -2,26 +2,46 @@ Healthcare Fraud Detection Project
 **Objective:** Detect potential fraudulent healthcare providers using Medicare billing data.  
 **Tools Used:** Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
 
-# Healthcare Fraud Detection Project
-Detect potential fraudulent healthcare providers using Python.
+Problem Statement
+Fraudulent billing is a major concern in healthcare.  
+This project aims to identify providers who submit unusually high charges compared to standardized Medicare amounts.
 
-## Dataset
-Medicare provider dataset (100k records) with provider details, services, and charges.
+ Dataset
+- 100,000 healthcare provider records  
+- Columns include provider details, service counts, Medicare charges, etc.
+- Key columns used: `Average Submitted Charge Amount`, `Average Medicare Standardized Amount`, `Number of Services`, `Gender`, `Provider Type`.
 
-## Tools Used
-- Python (Pandas, NumPy)
-- Visualization (Matplotlib, Seaborn)
-- Machine Learning (Scikit-learn)
+Data Cleaning
+- Filled missing values in `Gender` with 'Unknown'  
+- Converted numeric columns stored as objects to float  
+- Removed infinite values in `Std_Charge_Ratio`  
+- Created target variable `Fraud_Flag_Std`
 
-## Features
-- Average Submitted Charge Amount
-- Average Medicare Standardized Amount
-- Number of Services
-- Fraud Flag (Target Variable)
+Exploratory Data Analysis
+- Visualized fraud distribution  
+- Checked fraud ratio by provider type and gender  
+- Correlation heatmap of numeric features
 
-## Usage
-Open the Jupyter notebook and run all cells to explore the analysis and model.
+Feature Engineering
+- Std_Charge_Ratio = Submitted Charge / Standardized Amount  
+- Created additional numeric features like Services per Beneficiary
 
-## Author
+Fraud Prediction Model
+- Model: Random Forest Classifier  
+- Features: Numeric columns like Average Submitted Charge, Medicare Standardized Amount, Number of Services  
+- Split: 80% training, 20% testing  
+- Class imbalance handled with `class_weight='balanced'`
+
+Results
+- Accuracy: 92% (example)  
+- Confusion Matrix and Classification Report
+- Feature importance shows which features are most predictive of fraud.
+
+Future Work
+- Include categorical features like Gender, Provider Type using one-hot encoding  
+- Try XGBoost or LightGBM for better performance  
+- Deploy as an interactive dashboard with Plotly Dash or Streamlit
+
+Author
 V. Karthigaipriya
 
