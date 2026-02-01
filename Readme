@@ -1,14 +1,8 @@
-
-![image alt](https://tse4.mm.bing.net/th/id/OIP.5VZrtp6e0bcwboddxqHosgHaER?rs=1&pid=ImgDetMain&o=7&rm=3)
-
-
-
-
-Healthcare Fraud Detection Project 
+# Healthcare Fraud Detection Project 
 **Objective:** Detect potential fraudulent healthcare providers using Medicare billing data.  
 **Tools Used:** Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
 
-Problem Statement
+## Problem Statement
 Fraudulent billing is a major concern in healthcare.  
 This project aims to identify providers who submit unusually high charges compared to standardized Medicare amounts.
 
