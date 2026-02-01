@@ -1,47 +1,50 @@
-# Healthcare Fraud Detection Project 
-**Objective:** Detect potential fraudulent healthcare providers using Medicare billing data.  
-**Tools Used:** Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+# 🏥 Healthcare Fraud Detection Project
 
-## Problem Statement
-Fraudulent billing is a major concern in healthcare.  
-This project aims to identify providers who submit unusually high charges compared to standardized Medicare amounts.
+## 📌 Objective
+Detect potential fraudulent healthcare providers using Medicare billing data by identifying abnormal billing patterns.
 
- Dataset
+## 🛠 Tools Used
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
+
+---
+
+## ❓ Problem Statement
+Fraudulent billing is a major concern in the healthcare industry.  
+This project aims to identify providers who submit **unusually high charges** compared to **standardized Medicare amounts**, helping flag high-risk providers for further investigation.
+
+---
+
+## 📊 Dataset
 - 100,000 healthcare provider records  
-- Columns include provider details, service counts, Medicare charges, etc.
-- Key columns used: `Average Submitted Charge Amount`, `Average Medicare Standardized Amount`, `Number of Services`, `Gender`, `Provider Type`.
+- Includes provider details, service counts, and Medicare billing information  
+- **Key columns used:**
+  - `Average Submitted Charge Amount`
+  - `Average Medicare Standardized Amount`
+  - `Number of Services`
+  - `Gender`
+  - `Provider Type`
 
-Data Cleaning
-- Filled missing values in `Gender` with 'Unknown'  
-- Converted numeric columns stored as objects to float  
-- Removed infinite values in `Std_Charge_Ratio`  
-- Created target variable `Fraud_Flag_Std`
+---
 
-Exploratory Data Analysis
-- Visualized fraud distribution  
-- Checked fraud ratio by provider type and gender  
-- Correlation heatmap of numeric features
+## 🧹 Data Cleaning
+- Filled missing values in `Gender` with **"Unknown"**  
+- Converted numeric columns stored as objects to **float**  
+- Removed infinite values from `Std_Charge_Ratio`  
+- Created target variable **`Fraud_Flag_Std`**
 
-Feature Engineering
-- Std_Charge_Ratio = Submitted Charge / Standardized Amount  
-- Created additional numeric features like Services per Beneficiary
+---
 
-Fraud Prediction Model
-- Model: Random Forest Classifier  
-- Features: Numeric columns like Average Submitted Charge, Medicare Standardized Amount, Number of Services  
-- Split: 80% training, 20% testing  
-- Class imbalance handled with `class_weight='balanced'`
+## 📈 Exploratory Data Analysis (EDA)
+- Visualized fraud vs non-fraud distribution  
+- Analyzed fraud ratio by **provider type** and **gender**  
+- Generated correlation heatmap for numeric features  
 
-Results
-- Accuracy: 92% (example)  
-- Confusion Matrix and Classification Report
-- Feature importance shows which features are most predictive of fraud.
+---
 
-Future Work
-- Include categorical features like Gender, Provider Type using one-hot encoding  
-- Try XGBoost or LightGBM for better performance  
-- Deploy as an interactive dashboard with Plotly Dash or Streamlit
-
-Author
-V. Karthigaipriya
-
+## 🧠 Feature Engineering
+- Created **Std_Charge_Ratio**  
