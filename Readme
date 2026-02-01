@@ -1,60 +1,44 @@
-<h1 align="center">🏥 Healthcare Fraud Detection Project</h1>
+# 🏥 Healthcare Fraud Detection Project
 
-<h3 align="center">
-Detecting potential fraudulent healthcare providers using Medicare billing data
-</h3>
+## 📌 Objective
+Detect potential fraudulent healthcare providers using Medicare billing data by identifying abnormal billing patterns.
 
-<p align="center">
-  🎯 <strong>Objective</strong><br>
-  Identify healthcare providers involved in potential fraud by analyzing abnormal billing patterns and charge discrepancies.
-</p>
+## 🛠 Tools Used
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
 
-<p align="center">
-  🛠 <strong>Tools Used</strong><br>
-  Python | Pandas | NumPy | Matplotlib | Seaborn | Scikit-learn
-</p>
+---
+## ❓ Problem Statement
+Fraudulent billing is a major concern in the healthcare industry.  
+This project aims to identify providers who submit **unusually high charges** compared to **standardized Medicare amounts**, helping flag high-risk providers for further investigation.
 
-<p align="center">
-  ❓ <strong>Problem Statement</strong><br>
-  Fraudulent billing is a major concern in the healthcare industry. This project focuses on detecting providers who submit unusually high charges compared to standardized Medicare amounts.
-</p>
+---
+## 📊 Dataset
+- 100,000 healthcare provider records  
+- Includes provider details, service counts, and Medicare billing information  
+- **Key columns used:**
+  - `Average Submitted Charge Amount`
+  - `Average Medicare Standardized Amount`
+  - `Number of Services`
+  - `Gender`
+  - `Provider Type`
 
-<p align="center">
-  📊 <strong>Dataset</strong><br>
-  100,000 healthcare provider records including provider details, service counts, and Medicare billing information.
-</p>
+---
+## 🧹 Data Cleaning
+- Filled missing values in `Gender` with **"Unknown"**  
+- Converted numeric columns stored as objects to **float**  
+- Removed infinite values from `Std_Charge_Ratio`  
+- Created target variable **`Fraud_Flag_Std`**
 
-<p align="center">
-  🧹 <strong>Data Cleaning</strong><br>
-  Handled missing values, converted numeric columns, removed infinite values, and created a fraud target variable.
-</p>
+---
+## 📈 Exploratory Data Analysis (EDA)
+- Visualized fraud vs non-fraud distribution  
+- Analyzed fraud ratio by **provider type** and **gender**  
+- Generated correlation heatmap for numeric features  
 
-<p align="center">
-  📈 <strong>Exploratory Data Analysis</strong><br>
-  Analyzed fraud distribution, provider type patterns, gender-based trends, and feature correlations.
-</p>
-
-<p align="center">
-  🧠 <strong>Feature Engineering</strong><br>
-  Created charge ratio metrics and additional derived features to improve fraud detection accuracy.
-</p>
-
-<p align="center">
-  🤖 <strong>Fraud Prediction Model</strong><br>
-  Built a Random Forest Classifier with balanced class weights and an 80–20 train-test split.
-</p>
-
-<p align="center">
-  ✅ <strong>Results</strong><br>
-  Achieved approximately 92% accuracy with clear identification of high-risk fraud indicators.
-</p>
-
-<p align="center">
-  🚀 <strong>Future Enhancements</strong><br>
-  Incorporate categorical encoding, try advanced ML models, and deploy as an interactive dashboard.
-</p>
-
-<p align="center">
-  👩‍💻 <strong>Author</strong><br>
-  V. Karthigaipriya
-</p>
+---
+ 
