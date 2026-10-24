@@ -72,8 +72,3 @@ healthcare-fraud-detection/
 └── README.md
 ```
 
-## 🔮 Next Steps
-
-- Train and evaluate classification models using Scikit-learn
-- Explore anomaly detection methods (e.g., Isolation Forest)
-- Review flagged providers for validation
