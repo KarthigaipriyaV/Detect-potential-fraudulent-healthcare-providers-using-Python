@@ -48,21 +48,6 @@ Fraudulent billing is a major concern in the healthcare industry. This project i
 - Visualized fraud vs. non-fraud distribution
 - Analyzed fraud ratio by **provider type** and **gender**
 - Generated a correlation heatmap of numeric features
-
-## 🚀 Getting Started
-
-```bash
-# Clone the repository
-git clone <your-repo-url>
-cd healthcare-fraud-detection
-
-# Install dependencies
-pip install pandas numpy matplotlib seaborn scikit-learn
-
-# Launch the notebook
-jupyter notebook
-```
-
 ## 📁 Project Structure
 
 ```
